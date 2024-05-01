@@ -16,6 +16,9 @@ export const Dropdown = () => {
         backgroundColor:'transparent',
         _hover:{
           backgroundColor:'transparent',
+        },
+        _active:{
+          backgroundColor:'transparent',
         }
       }}as={IconButton} icon={<FaGlobeAmericas color="black" size={30} />}>
         Change Language
