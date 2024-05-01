@@ -1,0 +1,114 @@
+{
+    "en": {
+        "landing": {
+          "title": "Graphic Designer & Front-End Developer",
+          "subtitle": "Coffee; Design; Coffee; Code."
+        },
+      "title": "Who is Chrisluan? You Might Wonder.",
+      "description": "I'm Chrisluan, a graphic and web designer with experience in creating and developing layouts, logos, banners, websites, and applications. I specialize in C#, HTML, CSS, and Javascript, with knowledge in frameworks like Flutter, React, and Angular. I plan to continue my education in the field of design and programming."
+    },
+    "pt": {
+        "landing":{
+            "title":"Designer Gráfico & Desenvolvedor Front-End",
+            "subtitle":"Café; Design; Café; Código."
+        },
+      "title": "Quem é Chrisluan?\nVocê Pode se Perguntar.",
+      "description": "Eu sou Chrisluan, um designer gráfico e web com experiência na criação e desenvolvimento de layouts, logos, banners, sites e aplicativos. Eu me especializo em C#, HTML, CSS e Javascript, com conhecimento em frameworks como Flutter, React e Angular. Eu planejo continuar minha educação na área de design e programação."
+    },
+    "es": {
+      "landing": {
+        "title": "Diseñador Gráfico y Desarrollador Front-End",
+        "subtitle": "Café; Diseño; Café; Código."
+      },
+    "title": "¿Quién es Chrisluan? Podrías preguntarte.",
+    "description": "Soy Chrisluan, un diseñador gráfico y web con experiencia en la creación y desarrollo de diseños, logotipos, banners, sitios web y aplicaciones. Me especializo en C#, HTML, CSS y Javascript, con conocimientos en frameworks como Flutter, React y Angular. Planeo continuar mi educación en el campo del diseño y la programación."},
+    "fr": {
+        "landing": {
+          "title": "Designer Graphique et Développeur Front-End",
+          "subtitle": "Café; Design; Café; Code."
+        },
+      "title": "Qui est Chrisluan? Vous pourriez vous demander.",
+      "description": "Je suis Chrisluan, un designer graphique et web avec de l'expérience dans la création et le développement de mises en page, logos, bannières, sites web et applications. Je suis spécialisé en C#, HTML, CSS et Javascript, avec des connaissances en frameworks comme Flutter, React et Angular. Je prévois de continuer mon éducation dans le domaine du design et de la programmation."
+    },
+    "de": {
+        "landing": {
+          "title": "Grafikdesigner & Front-End Entwickler",
+          "subtitle": "Kaffee; Design; Kaffee; Code."
+        },
+      "title": "Wer ist Chrisluan? Du könntest dich fragen.",
+      "description": "Ich bin Chrisluan, ein Grafik- und Webdesigner mit Erfahrung in der Erstellung und Entwicklung von Layouts, Logos, Bannern, Websites und Anwendungen. Ich bin spezialisiert auf C#, HTML, CSS und Javascript, mit Kenntnissen in Frameworks wie Flutter, React und Angular. Ich plane, meine Ausbildung im Bereich Design und Programmierung fortzusetzen."
+    },
+    "it": {
+        "landing": {
+          "title": "Designer Grafico & Sviluppatore Front-End",
+          "subtitle": "Caffè; Design; Caffè; Codice."
+        },
+      "title": "Chi è Chrisluan? Potresti chiederti.",
+      "description": "Sono Chrisluan, un designer grafico e web con esperienza nella creazione e sviluppo di layout, loghi, banner, siti web e applicazioni. Mi specializzo in C#, HTML, CSS e Javascript, con conoscenze in framework come Flutter, React e Angular. Ho intenzione di continuare la mia formazione nel campo del design e della programmazione."
+    },
+    "ru": {
+      "landing": {
+        "title": "Графический дизайнер и Фронт-энд разработчик",
+        "subtitle": "Кофе; Дизайн; Кофе; Код."
+      },
+    "title": "Кто такой Крислуан? Вы могли бы спросить.",
+    "description": "Я Крислуан, графический и веб-дизайнер с опытом создания и разработки макетов, логотипов, баннеров, веб-сайтов и приложений. Я специализируюсь на C#, HTML, CSS и Javascript, с знаниями в таких фреймворках как Flutter, React и Angular. Я планирую продолжить свое образование в области дизайна и программирования."
+  },
+  "ja": {
+      "landing": {
+        "title": "グラフィックデザイナー＆フロントエンド開発者",
+        "subtitle": "コーヒー; デザイン; コーヒー; コード."
+      },
+    "title": "クリスルアンとは何者か？あなたは疑問に思うかもしれません。",
+    "description": "私はクリスルアン、グラフィックおよびWebデザイナーで、レイアウト、ロゴ、バナー、Webサイト、アプリケーションの作成と開発に経験があります。C#、HTML、CSS、Javascriptを専門とし、Flutter、React、Angularなどのフレームワークに精通しています。デザインとプログラミングの分野での教育を続ける予定です。"
+  },
+  "ko": {
+      "landing": {
+        "title": "그래픽 디자이너 및 프론트엔드 개발자",
+        "subtitle": "커피; 디자인; 커피; 코드."
+      },
+    "title": "크리스 루안은 누구일까요? 궁금할 수도 있습니다.",
+    "description": "나는 그래픽 및 웹 디자이너인 크리스 루안입니다. 레이아웃, 로고, 배너, 웹사이트 및 애플리케이션을 작성 및 개발하는 데 경험이 있습니다. C#, HTML, CSS 및 Javascript를 전문으로하며, Flutter, React 및 Angular와 같은 프레임 워크에 대한 지식을 가지고 있습니다. 디자인 및 프로그래밍 분야에서 교육을 계속할 계획입니다."
+  },
+  "zh": {
+      "landing": {
+        "title": "平面设计师和前端开发人员",
+        "subtitle": "咖啡; 设计; 咖啡; 代码."
+      },
+    "title": "克里斯鲁安是谁？您可能会想知道。",
+    "description": "我是克里斯鲁安，一名平面和网页设计师，具有创建和开发布局、标志、横幅、网站和应用程序的经验。我专攻于C#、HTML、CSS和Javascript，熟悉Flutter、React和Angular等框架。我计划继续在设计和编程领域深造。"
+  },
+  "ar": {
+      "landing": {
+        "title": "مصمم جرافيك ومطور أمامي",
+        "subtitle": "قهوة؛ تصميم؛ قهوة؛ كود."
+      },
+    "title": "من هو كريسلوان؟ قد تتساءل.",
+    "description": "أنا كريسلوان، مصمم جرافيك وويب ذو خبرة في إنشاء وتطوير التخطيطات، والشعارات، واللافتات، والمواقع الإلكترونية، والتطبيقات. أنا متخصص في C#، HTML، CSS، وجافا سكريبت، مع معرفة في الأطر مثل Flutter، React، وAngular. أنا أخطط لمواصلة تعليمي في مجال التصميم والبرمجة."
+  },
+  "hi": {
+      "landing": {
+        "title": "ग्राफिक डिजाइनर और फ्रंट-एंड डेवलपर",
+        "subtitle": "कॉफी; डिज़ाइन; कॉफी; कोड।"
+      },
+    "title": "क्रिसलुआन कौन हैं? आपको यह सोचना हो सकता है।",
+    "description": "मैं क्रिसलुआन हूं, एक ग्राफिक और वेब डिजाइनर जो लेआउट, लोगो, बैनर, वेबसाइट, और एप्लिकेशन बनाने और विकसित करने में अनुभव रखता है। मैं C#, HTML, CSS, और जावास्क्रिप्ट में विशेषज्ञ हूं, और Flutter, React, और Angular जैसे फ्रेमवर्क्स में ज्ञान रखता हूं। मैं डिजाइन और प्रोग्रामिंग के क्षेत्र में अपनी शिक्षा जारी रखने की योजना बनाता हूं।"
+  },
+  "pt-br": {
+      "landing": {
+        "title": "Designer Gráfico e Desenvolvedor Front-End",
+        "subtitle": "Café; Design; Café; Código."
+      },
+    "title": "Quem é Chrisluan? Você Pode se Perguntar.",
+    "description": "Eu sou Chrisluan, um designer gráfico e web com experiência na criação e desenvolvimento de layouts, logos, banners, sites e aplicativos. Eu me especializo em C#, HTML, CSS e Javascript, com conhecimento em frameworks como Flutter, React e Angular. Eu planejo continuar minha educação na área de design e programação."
+  },
+  "tr": {
+      "landing": {
+        "title": "Grafik Tasarımcı ve Front-End Geliştirici",
+        "subtitle": "Kahve; Tasarım; Kahve; Kod."
+      },
+    "title": "Chrisluan Kimdir? Merak Edebilirsiniz.",
+    "description": "Ben Chrisluan, düzen, logo, afiş, web sitesi ve uygulama oluşturma ve geliştirme konusunda deneyime sahip bir grafik ve web tasarımcısıyım. C#, HTML, CSS ve Javascript konularında uzmanlaştım ve Flutter, React ve Angular gibi çerçeveler hakkında bilgi sahibiyim. Tasarım ve programlama alanında eğitimime devam etmeyi planlıyorum."
+  }
+  }
+  
