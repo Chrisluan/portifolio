@@ -4,7 +4,7 @@ import {
   Image
 } from "@chakra-ui/react";
 import { Dropdown } from "./Dropdown";
-import logo from "../images/mobile/LOGO.svg";
+import logo from "../../public/LOGO.svg";
 import { useEffect, useState } from "react";
 const Header = () => {
   const [transparency, setTransparency] = useState(1);
