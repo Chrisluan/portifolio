@@ -8,7 +8,6 @@ const Hello = () => {
   const [isMobile] = useMediaQuery("(max-width: 900px)");
   const {t, changeLanguage} = Translations();
   const [currentLanguage, setCurrentLanguage] = useState('it');
-
   const handleChangeLanguage = (newLanguage) => {
     setCurrentLanguage(newLanguage);
     changeLanguage(newLanguage);
@@ -25,24 +24,25 @@ const Hello = () => {
           textAlign={isMobile ? "center" : "start"}
           gap={"50px"}
         >
+
           <Flex flexDir={'column'} alignItems={isMobile ? 'center':'start'} >
             <Text
-              as={"h2"}
+              as={"h1"}
               lineHeight={isMobile ? "40px" : "70px"}
               style={{ fontSize: isMobile ? "2rem" : "3.5rem" }}
             >
-              
               {t('landing.title')}
             </Text>
             <Text
               fontSize={isMobile ? "1.2rem" : "1.6rem"}
-              variant={"p"}
+              variant={"h3"}
               maxWidth={"30ch"}
             >
               {t('landing.subtitle')}
             </Text>
           </Flex>
-          <Image width={isMobile ? "15rem" : "30rem"} src={LOGO} />
+
+          <Image alt="Chrisluan Lucas Gomes da Silva Logotipo" width={isMobile ? "15rem" : "30rem"} src={LOGO} />
         </Flex>
       </Flex>
     </Section>

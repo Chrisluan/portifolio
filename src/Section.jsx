@@ -1,7 +1,6 @@
-import { Box, Divider } from "@chakra-ui/react";
-const Section = ({ children, justifyContent, alignItems, maxHeight = '100vh' }) => {
+import { Box } from "@chakra-ui/react";
+const Section = ({ children, justifyContent, alignItems, maxHeight = '100vh', flexDir, }) => {
   return (
-    <>
       <Box
         as="section"
         marginInline={"10%"}
@@ -11,11 +10,10 @@ const Section = ({ children, justifyContent, alignItems, maxHeight = '100vh' }) 
         display={"flex"}
         alignItems={alignItems}
         justifyContent={justifyContent}
+        flexDir={flexDir}
       >
         {children}
       </Box>
-      
-    </>
   );
 };
 export default Section;
