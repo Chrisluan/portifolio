@@ -2,7 +2,7 @@ import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/react";
 import { useState } from "react";
 import Translations from '../components/Translations.jsx'
-import LOGO from "../../public/LOGO.svg";
+import LOGO from "/LOGO.svg";
 import Section from "../Section";
 const Hello = () => {
   const [isMobile] = useMediaQuery("(max-width: 900px)");

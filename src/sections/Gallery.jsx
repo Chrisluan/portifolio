@@ -10,6 +10,7 @@ import {
   Text,
   Image,
   Flex,
+  TabIndicator
 } from "@chakra-ui/react";
 import Section from "../Section";
 
@@ -66,13 +67,27 @@ const Gallery = () => {
         />
       </Flex>
 
-      <Tabs variant="soft-rounded">
-        <TabList justifyContent="center" mb={4}>
-          {Object.keys(categories).map((category, index) => (
-            <Tab key={index}>{category}</Tab>
-          ))}
+      <Tabs variant="unstyled" sx={{
+        width:"90%"
+      }}>
+        <TabList justifyContent="center" gap={10} sx={{
+          "& > *":{
+            width:"100%",
+            backgroundColor:"#000",
+            color:"#FFF",
+            fontWeight:"bold",
+            _selected:{
+              background:"transparent",
+              color:"black",
+            }
+          }
+        }}>
+          
+            <Tab>Graphic Design</Tab>
+            <Tab>Motion Design</Tab>
+            <Tab>Web Design</Tab>
         </TabList>
-
+        <TabIndicator mt='-1.5px' height='2px' bg='#000' borderRadius='1px' />
         <TabPanels>
           {Object.keys(categories).map((category, index) => (
             <TabPanel key={index}>
