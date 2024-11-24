@@ -11,7 +11,7 @@ const Header = () => {
   
   useEffect(() => {
     window.addEventListener('scroll', function() {
-      setTransparency(Math.min(Math.max(1-(window.scrollY/1000), 0.1), 1))
+      setTransparency(Math.min(Math.max(1-(window.scrollY/1000), 0.4), 1))
   });
   });
   return (

@@ -30,6 +30,7 @@ const Hello = () => {
               as={"h1"}
               lineHeight={isMobile ? "40px" : "70px"}
               style={{ fontSize: isMobile ? "2rem" : "3.5rem" }}
+              fontFamily={"coolvetica"}
             >
               {t('landing.title')}
             </Text>

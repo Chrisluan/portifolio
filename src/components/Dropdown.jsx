@@ -25,10 +25,7 @@ export const Dropdown = () => {
       </MenuButton>
       <MenuList>
         <MenuItem onClick={()=>changeLanguage('pt')}>Português</MenuItem>
-        <MenuItem onClick={()=>changeLanguage('es')}>Espanhol</MenuItem>
         <MenuItem onClick={()=>changeLanguage('en')}>Inglês</MenuItem>
-        <MenuItem onClick={()=>changeLanguage('fr')}>Frances</MenuItem>
-        <MenuItem onClick={()=>changeLanguage('it')}>Italiano</MenuItem>
       </MenuList>
     </Menu>
   )
