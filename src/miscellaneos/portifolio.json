@@ -1,0 +1,45 @@
+{
+  "projects": [
+    {
+        "title":"Litoral Comunicação Visual",
+        "previewImage":"https://i.imgur.com/fv5NcQi.png",
+        "description": "Landing Page para a empresa Litoral Comunicação Visual."
+    },
+    {
+        "title":"Pousada Aconchego",
+        "previewImage":"https://i.imgur.com/IlmiM86.png",
+        "description": "Landing Page para a aconchego."
+    },
+    {
+        "title":"Pousada Aconchego",
+        "previewImage":"",
+        "description": "Landing Page para a aconchego."
+    },
+    {
+        "title":"Pousada Aconchego",
+        "previewImage":"",
+        "description": "Landing Page para a aconchego."
+    },
+    {
+        "title":"Pousada Aconchego",
+        "previewImage":"",
+        "description": "Landing Page para a aconchego."
+    },
+    {
+        "title":"Pousada Aconchego",
+        "previewImage":"",
+        "description": "Landing Page para a aconchego."
+    },
+    {
+        "title":"Pousada Aconchego",
+        "previewImage":"",
+        "description": "Landing Page para a aconchego."
+    },
+    {
+        "title":"Pousada Aconchego",
+        "previewImage":"",
+        "description": "Landing Page para a aconchego."
+    }
+    
+  ]
+}

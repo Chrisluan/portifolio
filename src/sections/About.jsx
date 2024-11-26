@@ -10,7 +10,7 @@ const About = () => {
   return (
     <Section alignItems={'center'} maxHeight={isMobile ? '100%':'100vh'}>
       <Flex flexDir={'column'} gap='5' width={'90%'}>
-      <Text lineHeight={isMobile?'3rem':'4rem'} fontSize={isMobile ? '2.5rem' : '4rem'} fontWeight={'bold'} as={'h1'}>
+      <Text fontFamily={"coolvetica"} lineHeight={isMobile?'3rem':'4rem'} fontSize={isMobile ? '2.5rem' : '4rem'} as={'h1'}>
         {t('title')}
       </Text>
 

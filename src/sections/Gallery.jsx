@@ -11,10 +11,23 @@ import {
   Image,
   Flex,
 } from "@chakra-ui/react";
-import Section from "../Section";
 
+import Section from "../Section";
+import { PortCard } from "../components/PortCard";
+import portifolio from "../miscellaneos/portifolio.json";
 const Gallery = () => {
   const [currentTab, setCurrentTab] = useState("Graphic Design");
+
+  const images = [
+    "https://picsum.photos/200/300",
+    "https://picsum.photos/200/301",
+    "https://picsum.photos/200/302",
+    "https://picsum.photos/200/303",
+    "https://picsum.photos/200/304",
+    "https://picsum.photos/200/305",
+    "https://picsum.photos/200/306",
+    "https://picsum.photos/200/307",
+  ];
 
   return (
     <Section alignItems={"center"} flexDir={"column"} maxHeight="fit-content">
@@ -83,7 +96,7 @@ const Gallery = () => {
             "& > *": {
               width: "50%",
               backgroundColor: "#000",
-              transition: "flex 0.3s",
+              transition: "flex 0.2s",
               color: "#FFF",
               fontWeight: "bold",
               _selected: {
@@ -101,14 +114,21 @@ const Gallery = () => {
           <Tab flex={1}>Web Design</Tab>
         </TabList>
 
-        <Flex sx={{display:{base:"block",md:"none"}, padding: "40px", justifyContent: "center", w: "100%" }}>
+        <Flex
+          sx={{
+            display: { base: "flex", md: "none" },
+            paddingY: "30px",
+            justifyContent: "center",
+            alignItems: "center",
+            w: "100%",
+          }}
+        >
           <Text
             sx={{
               maxWidth: "200px",
               fontFamily: "coolvetica",
               lineHeight: "40px",
               textAlign: "center",
-              
               fontSize: "3rem",
             }}
           >
@@ -117,85 +137,37 @@ const Gallery = () => {
         </Flex>
 
         <TabPanels display="flex" minHeight={"400px"} justifyContent={"center"}>
-
-          <TabPanel w={"90%"}>
+          <TabPanel w={{base:"100%", md:"90%"}}>
             <Grid
               templateColumns={{
-                base: "repeat(2, 1fr)", // 2 colunas no celular
+                base: "repeat(2, 1fr)", // 2 colunas no mobile
                 md: "repeat(3, 1fr)", // 3 colunas no desktop
               }}
-              gap={2}
-              autoRows="minmax(100px, auto)"
+              gap={{ base: "0", md: "2" }} // Sem espaçamento no mobile
+              autoRows={{ base: "auto", md: "minmax(100px, auto)" }} // Ajuste automático no mobile
             >
-              {/* Imagem 1 */}
-              <Box
-                aspectRatio={"16/9"}
-                height={"100%"}
-                overflow={"hidden"}
-                border="1px solid"
-              >
-                <Image
-                  src="https://picsum.photos/200/300"
-                  width={"100%"}
-                  alt="Image"
+              {}
+              {portifolio.projects.map((project, index) => (
+                <PortCard
+                  image={project.previewImage}
+                  title={project.title}
+                  key={index}
                 />
-              </Box>
+              ))}
 
-              {/* Imagem 2 */}
+              {/* Exclusive desktop box as 5th item */}
               <Box
                 aspectRatio={"16/9"}
                 height={"100%"}
                 overflow={"hidden"}
-                border="1px solid"
-              >
-                <Image
-                  src="https://picsum.photos/200/300"
-                  width={"100%"}
-                  alt="Image"
-                />
-              </Box>
-
-              {/* Imagem 3 */}
-              <Box
-                aspectRatio={"16/9"}
-                height={"100%"}
-                overflow={"hidden"}
-                border="1px solid"
-              >
-                <Image
-                  src="https://picsum.photos/200/300"
-                  width={"100%"}
-                  alt="Image"
-                />
-              </Box>
-
-              {/* Imagem 4 */}
-              <Box
-                aspectRatio={"16/9"}
-                height={"100%"}
-                overflow={"hidden"}
-                border="1px solid"
-              >
-                <Image
-                  src="https://picsum.photos/200/300"
-                  width={"100%"}
-                  alt="Image"
-                />
-              </Box>
-
-              {/* Imagem 5 */}
-              {/* Caixa do Meio (exclusiva para o desktop) */}
-              <Box
-                aspectRatio={"16/9"}
-                height={"100%"}
-                overflow={"hidden"}
-                
-                display={{ base: "none", md: "block" }} // Oculta no mobile
+                display={{ base: "none", md: "block" }} // Hidden on mobile
                 position="relative"
+                sx={{
+                  gridColumn: "2", // Place in the 2nd column
+                  gridRow: "2", // Place in the 2nd row
+                }}
               >
-                <Flex
-                  sx={{justifyContent: "center", alignItems:"center", height:"100%"}}
-                >
+                <Flex justifyContent="center" alignItems="center" height="100%">
                   <Text
                     sx={{
                       maxWidth: "200px",
@@ -208,61 +180,6 @@ const Gallery = () => {
                     {currentTab}
                   </Text>
                 </Flex>
-              </Box>
-
-              {/* Imagem 6 */}
-              <Box
-                aspectRatio={"16/9"}
-                height={"100%"}
-                overflow={"hidden"}
-                border="1px solid"
-              >
-                <Image
-                  src="https://picsum.photos/200/300"
-                  width={"100%"}
-                  alt="Image"
-                />
-              </Box>
-
-              {/* Imagem 7 */}
-              <Box
-                aspectRatio={"16/9"}
-                height={"100%"}
-                overflow={"hidden"}
-                border="1px solid"
-              >
-                <Image
-                  src="https://picsum.photos/200/300"
-                  width={"100%"}
-                  alt="Image"
-                />
-              </Box>
-
-              {/* Imagem 8 */}
-              <Box
-                aspectRatio={"16/9"}
-                height={"100%"}
-                overflow={"hidden"}
-                border="1px solid"
-              >
-                <Image
-                  src="https://picsum.photos/200/300"
-                  width={"100%"}
-                  alt="Image"
-                />
-              </Box>
-
-              <Box
-                aspectRatio={"16/9"}
-                height={"100%"}
-                overflow={"hidden"}
-                border="1px solid"
-              >
-                <Image
-                  src="https://picsum.photos/200/300"
-                  width={"100%"}
-                  alt="Image"
-                />
               </Box>
             </Grid>
           </TabPanel>
