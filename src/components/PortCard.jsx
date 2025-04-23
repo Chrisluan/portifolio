@@ -14,15 +14,17 @@ export const PortCard = ({ image, title, description, width, height }) => {
         backgroundColor={"background.inverted"}
         borderRadius={10}
         boxSize={"border-box"}
-        
+        position="relative"
       >
-      <Flex padding={2} background={image}>
-        <Image height="100%" top={0} objectFit={"scale-down"} src={image} alt={title} />
+      
+      <Image height="100%" objectFit={"scale-down"} src={image} alt={title} />
+      <Flex pos={"absolute"} w={"100%"} padding={2} backgroundImage={image} backgroundSize={"cover"} filter={"blur(1px)"}>
+        
       </Flex>
 
       <Flex flexDir={"column"} gap={5} padding={10}>
         
-        <Flex paddingTop={5} flexDir={"column"} color={"text.secondary"}>
+        <Flex  flexDir={"column"} color={"text.secondary"}>
           <Heading fontSize={"xx-large"} color={"text.secondary"}>
             {title}
           </Heading>

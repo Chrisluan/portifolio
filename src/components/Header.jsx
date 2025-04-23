@@ -47,12 +47,16 @@ const Header = () => {
         <Button
           height={"3rem"}
           
-          color={"text.secondary"}
-          backgroundColor={"background.inverted"}
-          borderRadius={10}
+          color={"text.primary"}
+          backgroundColor={"accent.500"}
+          borderRadius={5}
           _hover={{
-            background: "accent.500",
-            color: "text.primary",
+            backgroundColor: "transparent",
+            border:"1px solid",
+            color:"text.primary",
+            
+            borderColor: "accent.500",
+            
           }}
         >
           Start a conversation
