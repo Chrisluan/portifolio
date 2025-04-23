@@ -1,11 +1,4 @@
-body {
-    background-image: url('./src/images/background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-}
+
 body::-webkit-scrollbar {
     margin-right: 20px;
     width: 10px;

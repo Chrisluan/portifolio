@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-const Section = ({ children, justifyContent, alignItems, maxHeight = '100vh', flexDir, }) => {
+const Section = ({ children, justifyContent, bg, alignItems, maxHeight = '100vh', flexDir, }) => {
   return (
       <Box
         as="section"
@@ -11,6 +11,7 @@ const Section = ({ children, justifyContent, alignItems, maxHeight = '100vh', fl
         alignItems={alignItems}
         justifyContent={justifyContent}
         flexDir={flexDir}
+        bg={bg}
       >
         {children}
       </Box>

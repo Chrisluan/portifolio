@@ -4,18 +4,18 @@ const InfoCard = ({ title = "Name", info = "chrisluan.dev@gmail.com" }) => {
 const [isMobile] = useMediaQuery("(max-width: 900px)");
   return (
     <Box sx={{ fontSize: isMobile? '15px':'18px' }}>
-      <Text color={"black"} fontWeight={"bold"}>
+      <Text color={"text"} fontWeight={"bold"}>
         {title}
       </Text>
       <Box
         sx={{
-          backgroundColor: "black",
+          backgroundColor: "background.inverted",
           padding: "5px",
           width: "24ch",
         }}
       >
       
-        <Text color="white">{info}</Text>
+        <Text color="text.secondary">{info}</Text>
       </Box>
     </Box>
   );

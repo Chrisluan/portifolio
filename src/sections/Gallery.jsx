@@ -11,23 +11,13 @@ import {
   Image,
   Flex,
 } from "@chakra-ui/react";
-
+import "../styles/styles.css"
 import Section from "../Section";
 import { PortCard } from "../components/PortCard";
 import portifolio from "../miscellaneos/portifolio.json";
 const Gallery = () => {
   const [currentTab, setCurrentTab] = useState("Graphic Design");
 
-  const images = [
-    "https://picsum.photos/200/300",
-    "https://picsum.photos/200/301",
-    "https://picsum.photos/200/302",
-    "https://picsum.photos/200/303",
-    "https://picsum.photos/200/304",
-    "https://picsum.photos/200/305",
-    "https://picsum.photos/200/306",
-    "https://picsum.photos/200/307",
-  ];
 
   return (
     <Section alignItems={"center"} flexDir={"column"} maxHeight="fit-content">
@@ -37,13 +27,7 @@ const Gallery = () => {
         justifyContent={"space-evenly"}
         height={"fit-content"}
       >
-        <Box
-          sx={{
-            width: "20%",
-            height: "0.5rem",
-            backgroundColor: "#0077FF",
-          }}
-        />
+        
 
         <Flex flexDir={"column"} textAlign={"center"}>
           <Text
@@ -69,14 +53,6 @@ const Gallery = () => {
             Work
           </Text>
         </Flex>
-
-        <Box
-          sx={{
-            width: "20%",
-            height: "0.5rem",
-            backgroundColor: "#0077FF",
-          }}
-        />
       </Flex>
 
       <Tabs
@@ -90,28 +66,21 @@ const Gallery = () => {
         }}
       >
         <TabList
-          justifyContent="center"
-          gap={2}
+          
+          
           sx={{
             "& > *": {
               width: "50%",
-              backgroundColor: "#000",
-              transition: "flex 0.2s",
+              border:"1px solid gray",
+              transition: "all 0.2s",
               color: "#FFF",
               fontWeight: "bold",
-              _selected: {
-                background: "transparent",
-                color: "black",
-                width: "100%",
-                borderBottom: "solid 2px",
-                flex: "2",
-              },
             },
           }}
         >
-          <Tab flex={1}>Graphic Design</Tab>
-          <Tab flex={1}>Motion Design</Tab>
-          <Tab flex={1}>Web Design</Tab>
+          <Tab borderLeftRadius={"10px"} flex={1}>Web</Tab>
+          <Tab flex={1}>Graphic</Tab>
+          <Tab borderRightRadius={"10px"} flex={1}>Motion</Tab>
         </TabList>
 
         <Flex
@@ -146,8 +115,8 @@ const Gallery = () => {
               gap={{ base: "0", md: "2" }} // Sem espaçamento no mobile
               autoRows={{ base: "auto", md: "minmax(100px, auto)" }} // Ajuste automático no mobile
             >
-              {}
-              {portifolio.projects.map((project, index) => (
+              
+              {portifolio.web.map((project, index) => (
                 <PortCard
                   image={project.previewImage}
                   title={project.title}

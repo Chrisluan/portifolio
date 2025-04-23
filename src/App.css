@@ -1,3 +1,13 @@
-*{
+
+htmlS {
+    background-color: #0D0D0D;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@font-face {
+    font-family: 'coolvetica';
+    src: url('/public/coolvetica.otf');
+}
+@font-face {
+    font-family: 'trebuchet';
+    src: url('/public/trebuc.ttf');
 }

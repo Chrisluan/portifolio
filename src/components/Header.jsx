@@ -20,11 +20,12 @@ const Header = () => {
       sx={{
         position: "fixed",
         top:0,
+        zIndex:2000,
         transition: "top 0.3s",        
         minHeight: "90px",
         display: "flex",
         width: "100%",
-        background: "white",
+        background: "background.default",
         opacity: transparency,
         justifyContent: "space-between",
       }}

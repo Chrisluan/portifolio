@@ -30,6 +30,7 @@ const Hello = () => {
               as={"h1"}
               lineHeight={isMobile ? "40px" : "70px"}
               style={{ fontSize: isMobile ? "2rem" : "3.5rem" }}
+              maxWidth={"20ch"}
               fontFamily={"coolvetica"}
             >
               {t('landing.title')}
@@ -38,12 +39,15 @@ const Hello = () => {
               fontSize={isMobile ? "1.2rem" : "1.6rem"}
               variant={"h3"}
               maxWidth={"30ch"}
+              fontFamily={"trebuchet"}
             >
               {t('landing.subtitle')}
             </Text>
           </Flex>
 
-          <Image alt="Chrisluan Lucas Gomes da Silva Logotipo" width={isMobile ? "15rem" : "30rem"} src={LOGO} />
+          <Image sx={{
+            filter:" invert(1)"
+          }} alt="Chrisluan Lucas Gomes da Silva Logotipo" width={isMobile ? "15rem" : "30rem"} src={LOGO} />
         </Flex>
       </Flex>
     </Section>
