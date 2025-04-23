@@ -1,32 +1,56 @@
 import React from "react";
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
-export const PortCard = ({ image, title, description }) => {
+import { Box, Button, Flex, Heading, IconButton, Image, Text } from "@chakra-ui/react";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
+export const PortCard = ({ image, title, description, width, height }) => {
   return (
     <Box>
       <Flex
-        aspectRatio={{base:"20/16",md:"16/9"}}
+        height={"400px"}
         border={"solid 1px"}
         width={"100%"}
         overflow={"hidden"}
         direction="column"
-        align="center"
-        justify="center"
+        backgroundColor={"background.inverted"}
+        borderRadius={10}
+        boxSize={"border-box"}
         
       >
-        {
-            image ? (
-                <Image p={0} src={image} alt={title}/>
-            ):(
-                <Text sx={{
-                    fontFamily:"coolvetica",
-                    fontSize:"auto",
-                    textAlign:"center",
-                    lineHeight:"20px"
-                }}>Currently in <br></br>Progress</Text>
-            )
-        }
-        
+      <Flex padding={2} background={image}>
+        <Image height="100%" top={0} objectFit={"scale-down"} src={image} alt={title} />
       </Flex>
+
+      <Flex flexDir={"column"} gap={5} padding={10}>
+        
+        <Flex paddingTop={5} flexDir={"column"} color={"text.secondary"}>
+          <Heading fontSize={"xx-large"} color={"text.secondary"}>
+            {title}
+          </Heading>
+          <Text>
+            {description}
+          </Text>
+        </Flex>
+
+        <Flex justifyContent="space-between" alignItems="center">
+        <Button sx={{
+            backgroundColor:"accent.500",
+            color:"text.primary",
+            _hover:{
+              backgroundColor: "accent.500",
+            },
+            _active:{
+              backgroundColor: "accent.500",
+            }
+        }}>
+          About
+        </Button>
+        <IconButton>
+          <FiExternalLink color="#25272e"></FiExternalLink>
+        </IconButton>
+      </Flex>
+      </Flex>
+      </Flex>
+      
     </Box>
   );
 };

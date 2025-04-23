@@ -127,6 +127,7 @@ const Gallery = () => {
               autoRows={{ base: "auto", md: "minmax(100px, auto)" }} // Ajuste automático no mobile
             >
 
+              <PortCard image={portifolio.web[0].previewImage} description={portifolio.web[0].description} title={portifolio.web[0].title}/>
               
             </Grid>
           </TabPanel>
