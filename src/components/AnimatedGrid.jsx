@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 const MotionBox = motion(Box);
 
 export default function AnimatedGrid() {
-  const [isIdle, setIsIdle] = useState(false);
+  const [isIdle, setIsIdle] = useState(true);
   const idleTimer = useRef(null);
   const intervalId = useRef(null);
 
@@ -98,7 +98,7 @@ export default function AnimatedGrid() {
 
   return (
     <Box
-      position="fixed" // <--- troca de absolute pra fixed
+      position="fixed"
       inset="0"
       w="100%"
       h="100%"
