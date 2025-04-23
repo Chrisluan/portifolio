@@ -4,21 +4,33 @@ import { useEffect, useRef, useState } from "react";
 
 const MotionBox = motion(Box);
 
-const rows = 30;
-const cols = 20;
-
 export default function AnimatedGrid() {
   const [isIdle, setIsIdle] = useState(false);
-
   const idleTimer = useRef(null);
   const intervalId = useRef(null);
 
-  // Motion values para animar a posição suavemente
   const x = useMotionValue(window.innerWidth / 2);
   const y = useMotionValue(window.innerHeight / 2);
 
   const springX = useSpring(x, { stiffness: 80, damping: 20 });
   const springY = useSpring(y, { stiffness: 80, damping: 20 });
+
+  const [dimensions, setDimensions] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -31,7 +43,7 @@ export default function AnimatedGrid() {
 
       idleTimer.current = setTimeout(() => {
         setIsIdle(true);
-      }, 2000); // após 2s sem mexer, entra no modo idle
+      }, 2000);
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -42,7 +54,6 @@ export default function AnimatedGrid() {
     };
   }, [x, y]);
 
-  // Movimento automático suave quando parado
   useEffect(() => {
     if (isIdle) {
       intervalId.current = setInterval(() => {
@@ -50,7 +61,7 @@ export default function AnimatedGrid() {
         const randomY = Math.random() * window.innerHeight;
         x.set(randomX);
         y.set(randomY);
-      }, 2000); // muda a posição a cada 2 segundos
+      }, 2000);
     } else {
       clearInterval(intervalId.current);
     }
@@ -81,14 +92,14 @@ export default function AnimatedGrid() {
     };
   }, [springX, springY]);
 
-  const rowLines = Array.from({ length: rows });
-  const colLines = Array.from({ length: cols });
+  const cellSize = 40; // define a célula quadrada de 40x40px
+  const rows = Math.floor(dimensions.height / cellSize);
+  const cols = Math.floor(dimensions.width / cellSize);
 
   return (
     <Box
-      position="absolute"
-      top={0}
-      left={0}
+      position="fixed" // <--- troca de absolute pra fixed
+      inset="0"
       w="100%"
       h="100%"
       zIndex={-1}
@@ -96,15 +107,15 @@ export default function AnimatedGrid() {
       pointerEvents="none"
       style={maskStyle}
     >
-      {rowLines.map((_, i) => (
+      {Array.from({ length: rows }).map((_, i) => (
         <MotionBox
           key={`row-${i}`}
           position="absolute"
-          top={`${(100 / rows) * i}%`}
+          top={`${i * cellSize}px`}
           left="0"
           w="100%"
           h="2px"
-          bg="whiteAlpha.900"
+          bg="whiteAlpha.300"
           animate={{ opacity: [0.2, 0.9, 0.5] }}
           transition={{
             duration: 3,
@@ -115,15 +126,15 @@ export default function AnimatedGrid() {
         />
       ))}
 
-      {colLines.map((_, i) => (
+      {Array.from({ length: cols }).map((_, i) => (
         <MotionBox
           key={`col-${i}`}
           position="absolute"
-          left={`${(100 / cols) * i}%`}
+          left={`${i * cellSize}px`}
           top="0"
           h="100%"
           w="2px"
-          bg="whiteAlpha.900"
+          bg="whiteAlpha.400"
           animate={{ opacity: [0.2, 0.9, 0.5] }}
           transition={{
             duration: 3,
