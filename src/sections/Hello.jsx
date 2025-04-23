@@ -7,11 +7,6 @@ import Section from "../Section";
 const Hello = () => {
   const [isMobile] = useMediaQuery("(max-width: 900px)");
   const {t, changeLanguage} = Translations();
-  const [currentLanguage, setCurrentLanguage] = useState('it');
-  const handleChangeLanguage = (newLanguage) => {
-    setCurrentLanguage(newLanguage);
-    changeLanguage(newLanguage);
-  };
   return (
     <Section justifyContent={"space-around"}>
       <Flex width={"100%"} alignItems={"center"} paddingTop={20}>
@@ -29,8 +24,8 @@ const Hello = () => {
             <Text
               as={"h1"}
               lineHeight={isMobile ? "40px" : "70px"}
-              style={{ fontSize: isMobile ? "2rem" : "3.5rem" }}
-              maxWidth={"20ch"}
+              style={{ fontSize: isMobile ? "2rem" : "3.3rem" }}
+              maxWidth={"23ch"}
               fontFamily={"coolvetica"}
             >
               {t('landing.title')}

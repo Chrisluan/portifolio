@@ -4,7 +4,7 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: "#0D0D0D", // fundo principal
+        bg: "#1b1c22", // fundo principal
         color: "#E8E5DA", // texto claro principal
       },
     },
@@ -23,8 +23,8 @@ export const theme = extendTheme({
       900: "#0A2C7A",
     },
     background: {
-      default: "#0D0D0D",
-      contrast: "#1A1A1A", // pode usar para cards ou seções
+      default: "#1b1c22",
+      contrast: "#25272e", // pode usar para cards ou seções
       inverted: "#E8E5DA",
     },
     text: {
@@ -32,7 +32,7 @@ export const theme = extendTheme({
       secondary: "#0D0D0D",
     },
     accent: {
-      500: "#00C7B7", // um tom de ciano usado em ícones ou detalhes visuais
+      500: "#0056c7", // um tom de ciano usado em ícones ou detalhes visuais
     },
     whiteAlpha: {
       900: "#FFFFFF",

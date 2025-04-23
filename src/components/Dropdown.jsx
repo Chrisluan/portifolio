@@ -20,7 +20,7 @@ export const Dropdown = () => {
         _active:{
           backgroundColor:'transparent',
         }
-      }}as={IconButton} icon={<FaGlobeAmericas color="black" size={30} />}>
+      }}as={IconButton} icon={<FaGlobeAmericas color="white" size={30} />}>
         Change Language
       </MenuButton>
       <MenuList>

@@ -16,7 +16,6 @@ export const PortCard = ({ image, title, description }) => {
         {
             image ? (
                 <Image p={0} src={image} alt={title}/>
-                
             ):(
                 <Text sx={{
                     fontFamily:"coolvetica",

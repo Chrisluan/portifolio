@@ -1,7 +1,8 @@
 import {
   Box,
   Button,
-  Image
+  Image,
+  Flex
 } from "@chakra-ui/react";
 import { Dropdown } from "./Dropdown";
 import logo from "/LOGO.svg";
@@ -25,12 +26,12 @@ const Header = () => {
         minHeight: "90px",
         display: "flex",
         width: "100%",
-        background: "background.default",
-        opacity: transparency,
+        
         justifyContent: "space-between",
       }}
     >
       <Box
+        opacity={transparency}
         as="nav"
         alignItems={"center"}
         top={0}
@@ -38,23 +39,26 @@ const Header = () => {
         display={"flex"}
         justifyContent={"space-around"}
       >
-        <Image display={"flex"} width={"3rem"} src={logo} />
-        <Box>
+        <Image sx={{
+          filter:"invert(1)"
+        }} display={"flex"} width={"3rem"} src={logo} />
+        <Flex alignItems={"center"} gap={5}>
+
         <Button
           height={"3rem"}
-          border={"2px solid black"}
-          color={"white"}
-          backgroundColor={"black"}
-          borderRadius={0}
+          
+          color={"text.secondary"}
+          backgroundColor={"background.inverted"}
+          borderRadius={10}
           _hover={{
-            background: "white",
-            color: "black",
+            background: "accent.500",
+            color: "text.primary",
           }}
         >
           Start a conversation
         </Button>
         <Dropdown/>
-        </Box>
+        </Flex>
         
       </Box>
     </Box>
