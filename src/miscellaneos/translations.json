@@ -1,22 +1,22 @@
 {
   "en": {
     "landing": {
-      "title": "Graphic Designer & Front-End Developer",
+      "title": "Graphic Designer & Full-Stack Developer",
       "subtitle": "Coffee; Design; Coffee; Code."
     },
     "portifolio":"A bit of my",
     "work":"Work",
     "title": "Who is Chrisluan? You Might Wonder.",
-    "description": "Hi, I’m Chrisluan! I’m a graphic and web designer, passionate about creating layouts, logos, websites, and apps. I love combining creativity with technology to deliver my projects."
+    "description": "Hi, I’m Chrisluan! I’m a graphic and Web designer, passionate about creating layouts, logos, websites, and apps. I love combining creativity with technology to deliver my projects."
   },
   "pt": {
     "landing": {
-      "title": "Designer Gráfico & Desenvolvedor Front-End",
+      "title": "Designer Gráfico & Desenvolvedor Full-Stack",
       "subtitle": "Café; Design; Café; Código."
     },
     "portifolio":"Um pouco do meu",
     "work":"Trabalho",
     "title": "Quem é Chrisluan? Você Pode se Perguntar.",
-    "description": "Oi, sou o Chrisluan! Sou designer gráfico e web, apaixonado por criar layouts, logos, sites e aplicativos. Adoro combinar criatividade com tecnologia para entregar meus projetos."
+    "description": "Oi, sou o Chrisluan! Sou designer gráfico e Web, apaixonado por criar layouts, logos, sites e aplicativos. Adoro combinar criatividade com tecnologia para entregar meus projetos."
   }
 }
