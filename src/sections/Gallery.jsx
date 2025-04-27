@@ -11,7 +11,7 @@ import {
   Image,
   Flex,
 } from "@chakra-ui/react";
-import "../styles/styles.css"
+import "../styles/styles.css";
 import Section from "../Section";
 import { PortCard } from "../components/PortCard";
 import portifolio from "../miscellaneos/portifolio.json";
@@ -19,7 +19,7 @@ import Translations from "../components/Translations";
 const Gallery = () => {
   const [currentTab, setCurrentTab] = useState("Graphic Design");
 
-  const {t, changeLanguage} = Translations();
+  const { t, changeLanguage } = Translations();
   return (
     <Section alignItems={"center"} flexDir={"column"} maxHeight="fit-content">
       <Flex
@@ -28,8 +28,6 @@ const Gallery = () => {
         justifyContent={"space-evenly"}
         height={"fit-content"}
       >
-        
-
         <Flex flexDir={"column"} textAlign={"center"}>
           <Text
             flex={2}
@@ -39,7 +37,7 @@ const Gallery = () => {
             textAlign={"center"}
             m={0}
           >
-            {t('portifolio')}
+            {t("portifolio")}
           </Text>
           <Text
             sx={{
@@ -49,10 +47,9 @@ const Gallery = () => {
               color: "accent.500",
               fontFamily: "coolvetica",
               p: 0,
-              
             }}
           >
-            {t('work')}
+            {t("work")}
           </Text>
         </Flex>
       </Flex>
@@ -68,69 +65,61 @@ const Gallery = () => {
         }}
       >
         <TabList
-          
-          
           sx={{
             "& > *": {
-              padding:"20px",
-              fontFamily:"coolvetica",
+              padding: "20px",
+              fontFamily: "coolvetica",
               width: "50%",
-              border:"1px solid",
-              borderColor:"background.contrast",
-              flex:1,
+              border: "1px solid",
+              borderColor: "background.contrast",
+              flex: 1,
               color: "#FFF",
               fontWeight: 200,
               transition: "all 0.2s",
-              _selected:{
-                backgroundColor:"background.contrast",
-                flex:1.2
+              _selected: {
+                backgroundColor: "background.contrast",
+                flex: 1.2,
+              },
             },
-            },
-            
           }}
         >
-          <Tab borderLeftRadius={"10px"}>Web</Tab>
-          <Tab>Graphic</Tab>
-          <Tab borderRightRadius={"10px"}>Motion</Tab>
+          {Object.entries(portifolio).map(([cat, items], index) => {
+            return <Tab key={index} borderLeftRadius={index}>{cat}</Tab>;
+          })}
         </TabList>
 
-        <Flex
-          sx={{
-            display: { base: "flex", md: "none" },
-            paddingY: "30px",
-            justifyContent: "center",
-            alignItems: "center",
-            w: "100%",
-          }}
-        >
-          <Text
-            sx={{
-              maxWidth: "200px",
-              fontFamily: "coolvetica",
-              lineHeight: "40px",
-              textAlign: "center",
-              fontSize: "3rem",
-            }}
-          >
-            {currentTab}
-          </Text>
-        </Flex>
-
         <TabPanels display="flex" minHeight={"400px"} justifyContent={"center"}>
-          <TabPanel w={{base:"100%", md:"90%"}}>
-            <Grid
-              templateColumns={{
-                base: "repeat(2, 1fr)", // 2 colunas no mobile
-                md: "repeat(3, 1fr)", // 3 colunas no desktop
-              }}
-              gap={{ base: "0", md: "2" }} // Sem espaçamento no mobile
-              autoRows={{ base: "auto", md: "minmax(100px, auto)" }} // Ajuste automático no mobile
-            >
-
-              <PortCard image={portifolio.web[0].previewImage} description={portifolio.web[0].description} title={portifolio.web[0].title}/>
-              
-            </Grid>
-          </TabPanel>
+          {Object.entries(portifolio).map(([cat, items], index) => {
+            return (
+              <TabPanel w={{ base: "100%", md: "90%" }} key={index}>
+                <Grid
+                  templateColumns={{
+                    base: "repeat(2, 1fr)", // 2 colunas no mobile
+                    md: "repeat(3, 1fr)", // 3 colunas no desktop
+                  }}
+                  gap={{ base: "3", md: "2" }} // Espaçamento entre os cards
+                  autoRows="minmax(500px, auto)" // Ajuste a altura dos cards para evitar o espaço extra
+                  overflowX={{ base: "auto", md: "unset" }} // Habilita rolagem horizontal no mobile
+                  display={{ base: "flex", md: "grid" }} // Flexbox no mobile e grid no desktop
+                  flexWrap="nowrap" // Evita que os itens se quebrem no mobile
+                >
+                  {items.map((item, idx) => {
+                    return (
+                      <PortCard
+                        key={idx}
+                        image={item.previewImage}
+                        description={item.description}
+                        title={item.title}
+                        link={item.link}
+                        w="100%" // Faz com que o card ocupe toda a largura da coluna
+                        height="auto" // Deixa a altura do card automática, ajustando conforme o conteúdo
+                      />
+                    );
+                  })}
+                </Grid>
+              </TabPanel>
+            );
+          })}
         </TabPanels>
       </Tabs>
     </Section>

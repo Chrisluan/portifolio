@@ -1,131 +1,41 @@
 {
-  "graphic": [
+    "Web": [
     {
-        "title":"Litoral Comunicação Visual",
-        "previewImage":"https://i.imgur.com/fv5NcQi.png",
-        "description": "Landing Page para a empresa Litoral Comunicação Visual."
+      "title": "Litoral Comunicação Visual",
+      "previewImage": "https://i.imgur.com/fv5NcQi.png",
+      "description": "Landing Page comercial + Sistema de entrega de projetos para a empresa Litoral Comunicação Visual.",
+      "link":"https://www.litoralvisual.com.br"
     },
     {
-        "title":"Pousada Aconchego",
-        "previewImage":"https://i.imgur.com/IlmiM86.png",
-        "description": "Landing Page para a aconchego."
+      "title": "Pousada Aconchego",
+      "previewImage": "https://i.imgur.com/IlmiM86.png",
+      "description": "Landing Page para a aconchego."
     },
     {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
+      "title": "Pousada Aconchego",
+      "previewImage": "https://i.imgur.com/IlmiM86.png",
+      "description": "Landing Page para a aconchego."
     },
     {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
+      "title": "Pousada Aconchego",
+      "previewImage": "https://i.imgur.com/IlmiM86.png",
+      "description": "Landing Page para a aconchego."
     }
-    
+    ,
+    {
+      "title": "Pousada Aconchego",
+      "previewImage": "https://i.imgur.com/IlmiM86.png",
+      "description": "Landing Page para a aconchego."
+    }
   ],
-  "motion": [
+  "Graphic": [
     {
-        "title":"Litoral Comunicação Visual",
-        "previewImage":"https://i.imgur.com/fv5NcQi.png",
-        "description": "Landing Page para a empresa Litoral Comunicação Visual."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"https://i.imgur.com/IlmiM86.png",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
+        "title":"Ícones App Freguesia BarberShop",
+        "previewImage":"https://m.media-amazon.com/images/S/aplus-media-library-service-media/1dae5a87-b7df-479b-b77e-a66dd2a528bb.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+        "description":"Ícones para reconhecimento dos cortes e serviços dentro do Aplicativo"
     }
-    
   ],
-  "web": [
-    {
-        "title":"Litoral Comunicação Visual",
-        "previewImage":"https://i.imgur.com/fv5NcQi.png",
-        "description": "Landing Page comercial + Sistema de entrega de projetos para a empresa Litoral Comunicação Visual."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"https://i.imgur.com/IlmiM86.png",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    },
-    {
-        "title":"Pousada Aconchego",
-        "previewImage":"",
-        "description": "Landing Page para a aconchego."
-    }
+  "Motion": [
     
   ]
 }
